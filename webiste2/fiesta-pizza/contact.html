@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us – Fiesta&nbsp;Pizza</title>
+    <meta
+      name="description"
+      content="Get in touch with Fiesta Pizza. Find our address, phone and email or send us a message about catering, large orders or feedback."
+    />
+    <link rel="canonical" href="./contact.html" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <header class="site-header" role="banner">
+      <div class="container header-container">
+        <a href="index.html" class="logo" aria-label="Fiesta Pizza home">
+          Fiesta&nbsp;Pizza
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="menu.html" class="nav-link">Menu</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li>
+              <a
+                href="order.html"
+                class="button order-nav-link"
+                aria-label="Order on DoorDash"
+                >Order</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="container" aria-label="Contact information">
+        <h1 class="section-title">Contact Us</h1>
+        <p>
+          We're here to answer any questions, take catering inquiries and hear your
+          feedback. Reach out via the form below or use the information on
+          the right.
+        </p>
+        <div class="card-grid" style="gap: 2rem;">
+          <div style="flex: 2 1 300px;">
+            <form id="contact-form" novalidate>
+              <div style="margin-bottom: 1rem;">
+                <label for="contact-name">Name</label><br />
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  required
+                  aria-required="true"
+                  style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: var(--radius);"
+                />
+              </div>
+              <div style="margin-bottom: 1rem;">
+                <label for="contact-email">Email</label><br />
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  required
+                  aria-required="true"
+                  style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: var(--radius);"
+                />
+              </div>
+              <div style="margin-bottom: 1rem;">
+                <label for="contact-message">Message</label><br />
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="5"
+                  required
+                  aria-required="true"
+                  style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: var(--radius); resize: vertical;"
+                ></textarea>
+              </div>
+              <button type="submit" class="button">Send Message</button>
+              <p id="contact-message-status" class="form-message" aria-live="polite" style="margin-top:0.5rem;"></p>
+            </form>
+            <p style="font-size: 0.9rem; margin-top: 1rem;">
+              <strong>Catering &amp; large orders:</strong> For events or orders over
+              10 pizzas, please email <a href="mailto:orders@fiestapizzasalem.com">orders@fiestapizzasalem.com</a> or call <a href="tel:5035551212">(503) 555‑1212</a>.
+            </p>
+          </div>
+          <div style="flex: 1 1 250px;">
+            <h2 style="margin-top: 0;">Find Us</h2>
+            <p>
+              <strong>Address:</strong>
+              <span data-config="address">123 Sample St, Salem, OR 97301</span>
+            </p>
+            <p>
+              <strong>Phone:</strong> <a href="tel:5035551212" data-config="phone">(503)
+              555‑1212</a>
+            </p>
+            <p>
+              <strong>Email:</strong> <a href="mailto:orders@fiestapizzasalem.com" data-config="email">orders@fiestapizzasalem.com</a>
+            </p>
+            <p>
+              <strong>Hours:</strong><br />
+              <span data-config="hours">Sun–Thu 11 a–9 p • Fri–Sat 11 a–10 p</span>
+            </p>
+            <p>
+              <a
+                href="https://maps.google.com/?q=123+Sample+St+Salem+OR+97301"
+                class="button small"
+                target="_blank"
+                rel="noopener"
+                >Open in Maps</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-container">
+        <div class="footer-section contact-info">
+          <h3>Contact</h3>
+          <p>
+            <strong>Address:</strong>
+            <span data-config="address">123 Sample St, Salem, OR 97301</span>
+          </p>
+          <p>
+            <strong>Phone:</strong> <a href="tel:5035551212" data-config="phone">
+              (503) 555‑1212
+            </a>
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:orders@fiestapizzasalem.com" data-config="email">
+              orders@fiestapizzasalem.com
+            </a>
+          </p>
+        </div>
+        <div class="footer-section hours">
+          <h3>Hours</h3>
+          <p data-config="hours">Sun–Thu 11 a–9 p<br />Fri–Sat 11 a–10 p</p>
+        </div>
+        <div class="footer-section social">
+          <h3>Follow</h3>
+          <p>
+            <a href="#" data-config="social" aria-label="Fiesta Pizza on social media">
+              @fiestapizzasalem
+            </a>
+          </p>
+        </div>
+        <div class="footer-section newsletter">
+          <h3>Newsletter</h3>
+          <form id="newsletter-form" novalidate>
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <input
+              type="email"
+              id="newsletter-email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+            <button type="submit" class="button small">Subscribe</button>
+            <p id="newsletter-message" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+      <p class="privacy-note">We respect your privacy and only use your information to send the occasional pizza update.</p>
+    </footer>
+    <a href="order.html" class="floating-order doordash-link" aria-label="Order on DoorDash">Order</a>
+    <script src="js/config.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script>
+      // Contact form validation
+      document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('contact-form');
+        if (!form) return;
+        const status = document.getElementById('contact-message-status');
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const name = document.getElementById('contact-name').value.trim();
+          const email = document.getElementById('contact-email').value.trim();
+          const message = document.getElementById('contact-message').value.trim();
+          if (!name || !email || !message) {
+            status.textContent = 'Please fill out all fields.';
+            status.classList.add('error');
+            return;
+          }
+          if (!/.+@.+\..+/.test(email)) {
+            status.textContent = 'Please enter a valid email address.';
+            status.classList.add('error');
+            return;
+          }
+          status.classList.remove('error');
+          status.textContent = 'Thank you for your message! We will be in touch soon.';
+          form.reset();
+        });
+      });
+    </script>
+  </body>
+</html>

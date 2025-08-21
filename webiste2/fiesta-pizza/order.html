@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order – Fiesta&nbsp;Pizza</title>
+    <meta
+      name="description"
+      content="Order your favorite Mexican‑style pizzas from Fiesta Pizza through DoorDash. Fast delivery or pickup in Salem, Oregon."
+    />
+    <link rel="canonical" href="./order.html" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <header class="site-header" role="banner">
+      <div class="container header-container">
+        <a href="index.html" class="logo" aria-label="Fiesta Pizza home">
+          Fiesta&nbsp;Pizza
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="menu.html" class="nav-link">Menu</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li>
+              <a
+                href="order.html"
+                class="button order-nav-link"
+                aria-label="Order on DoorDash"
+                >Order</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="container" aria-label="Order online">
+        <h1 class="section-title">Order on DoorDash</h1>
+        <p>
+          Hungry now? We’ve partnered with DoorDash so you can enjoy your
+          Fiesta Pizza favorites delivered hot and fresh or ready for pickup.
+        </p>
+        <p style="text-align: center; margin: 2rem 0;">
+          <a
+            href="#"
+            class="button large doordash-link"
+            style="font-size:1.25rem;"
+            aria-label="Order Fiesta Pizza on DoorDash"
+            >Go to DoorDash Store</a
+          >
+        </p>
+        <h2 style="margin-top:2rem;">Pickup &amp; Delivery Details</h2>
+        <ul style="list-style: none; padding: 0;">
+          <li style="margin-bottom:0.75rem;">
+            <strong>Pickup:</strong> When ordering for pickup, head to our counter and
+            provide your name and order number. We’ll have your pie ready and
+            waiting.
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>Delivery zones:</strong> DoorDash delivers within most of
+            Salem city limits. Enter your address on DoorDash to confirm.
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>Fees &amp; ETAs:</strong> Delivery fees and estimated arrival times
+            are set by DoorDash and may vary based on distance and demand.
+          </li>
+        </ul>
+        <h2>Having trouble?</h2>
+        <p>
+          If our DoorDash store isn’t loading, please refresh the page or place your
+          order by phone at <a href="tel:5035551212">(503) 555‑1212</a>.
+        </p>
+      </section>
+    </main>
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-container">
+        <div class="footer-section contact-info">
+          <h3>Contact</h3>
+          <p>
+            <strong>Address:</strong>
+            <span data-config="address">123 Sample St, Salem, OR 97301</span>
+          </p>
+          <p>
+            <strong>Phone:</strong> <a href="tel:5035551212" data-config="phone">
+              (503) 555‑1212
+            </a>
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:orders@fiestapizzasalem.com" data-config="email">
+              orders@fiestapizzasalem.com
+            </a>
+          </p>
+        </div>
+        <div class="footer-section hours">
+          <h3>Hours</h3>
+          <p data-config="hours">Sun–Thu 11 a–9 p<br />Fri–Sat 11 a–10 p</p>
+        </div>
+        <div class="footer-section social">
+          <h3>Follow</h3>
+          <p>
+            <a href="#" data-config="social" aria-label="Fiesta Pizza on social media">
+              @fiestapizzasalem
+            </a>
+          </p>
+        </div>
+        <div class="footer-section newsletter">
+          <h3>Newsletter</h3>
+          <form id="newsletter-form" novalidate>
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <input
+              type="email"
+              id="newsletter-email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+            <button type="submit" class="button small">Subscribe</button>
+            <p id="newsletter-message" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+      <p class="privacy-note">We respect your privacy and only use your information to send the occasional pizza update.</p>
+    </footer>
+    <a href="order.html" class="floating-order doordash-link" aria-label="Order on DoorDash">Order</a>
+    <script src="js/config.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
