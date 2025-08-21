@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu – Fiesta&nbsp;Pizza</title>
+    <meta
+      name="description"
+      content="Browse the Fiesta Pizza menu: Mexican‑inspired pizzas, sides, drinks and desserts. Order your favorites fast and hot in Salem, OR."
+    />
+    <link rel="canonical" href="./menu.html" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/icon-192.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Structured data for menu -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Menu",
+        "name": "Fiesta Pizza Menu",
+        "url": "./menu.html",
+        "hasMenuSection": [
+          {
+            "@type": "MenuSection",
+            "name": "Pizzas",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Al Pastor Pizza",
+                "description": "Sweet and smoky pineapple salsa, marinated pork, cilantro.",
+                "offers": { "@type": "Offer", "price": "14.00", "priceCurrency": "USD" }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Carne Asada Pizza",
+                "description": "Grilled steak, roasted poblanos, lime crema.",
+                "offers": { "@type": "Offer", "price": "15.00", "priceCurrency": "USD" }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Elote Pizza",
+                "description": "Charred corn, cotija cheese, chili lime spice on a creamy base.",
+                "offers": { "@type": "Offer", "price": "13.00", "priceCurrency": "USD" }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Veggie Verde Pizza",
+                "description": "Roasted peppers, mushrooms, tomatillo salsa, melted cheese.",
+                "offers": { "@type": "Offer", "price": "12.00", "priceCurrency": "USD" }
+              }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Sides",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Chips & Salsa",
+                "description": "Crisp corn chips with smoky salsa.",
+                "offers": { "@type": "Offer", "price": "4.00", "priceCurrency": "USD" }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Street Corn Salad",
+                "description": "Fresh corn, lime crema, cotija cheese.",
+                "offers": { "@type": "Offer", "price": "5.00", "priceCurrency": "USD" }
+              }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Drinks",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Horchata",
+                "description": "House‑made cinnamon rice drink.",
+                "offers": { "@type": "Offer", "price": "3.00", "priceCurrency": "USD" }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Agua Fresca",
+                "description": "Rotating seasonal fruit drink.",
+                "offers": { "@type": "Offer", "price": "3.00", "priceCurrency": "USD" }
+              }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Desserts",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Churro Bites",
+                "description": "Cinnamon sugar churro bites with chocolate dipping sauce.",
+                "offers": { "@type": "Offer", "price": "5.00", "priceCurrency": "USD" }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Flan",
+                "description": "Creamy caramel flan with citrus zest.",
+                "offers": { "@type": "Offer", "price": "5.00", "priceCurrency": "USD" }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <!-- Header -->
+    <header class="site-header" role="banner">
+      <div class="container header-container">
+        <a href="index.html" class="logo" aria-label="Fiesta Pizza home">
+          Fiesta&nbsp;Pizza
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="menu.html" class="nav-link">Menu</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li>
+              <a
+                href="order.html"
+                class="button order-nav-link"
+                aria-label="Order on DoorDash"
+                >Order</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="container" aria-label="Menu">
+        <h1 class="section-title">Our Menu</h1>
+        <!-- Filter buttons -->
+        <div class="menu-filter" role="tablist" aria-label="Filter menu">
+          <button
+            type="button"
+            class="button small active"
+            data-filter="all"
+            aria-pressed="true"
+          >
+            All
+          </button>
+          <button type="button" class="button small" data-filter="pizza">Pizzas</button>
+          <button type="button" class="button small" data-filter="side">Sides</button>
+          <button type="button" class="button small" data-filter="drink">Drinks</button>
+          <button type="button" class="button small" data-filter="dessert">Desserts</button>
+        </div>
+        <!-- Menu items -->
+        <div class="menu-items card-grid" aria-live="polite">
+          <!-- Pizzas -->
+          <article class="menu-item card" data-category="pizza">
+            <div class="card-icon" aria-hidden="true">🍍</div>
+            <h3 class="card-title">Al Pastor Pizza</h3>
+            <p class="card-desc">Sweet and smoky pineapple salsa, marinated pork, cilantro.</p>
+            <p class="card-price">$14.00</p>
+            <p class="card-tags"><span aria-label="Contains gluten">GF*</span></p>
+            <a
+              href="order.html"
+              class="button small doordash-link"
+              aria-label="Order Al Pastor Pizza on DoorDash"
+              >Order</a
+            >
+          </article>
+          <article class="menu-item card" data-category="pizza">
+            <div class="card-icon" aria-hidden="true">🥩</div>
+            <h3 class="card-title">Carne Asada Pizza</h3>
+            <p class="card-desc">Grilled steak, roasted poblanos, lime crema.</p>
+            <p class="card-price">$15.00</p>
+            <p class="card-tags"><span aria-label="Contains gluten">GF*</span></p>
+            <a
+              href="order.html"
+              class="button small doordash-link"
+              aria-label="Order Carne Asada Pizza on DoorDash"
+              >Order</a
+            >
+          </article>
+          <article class="menu-item card" data-category="pizza">
+            <div class="card-icon" aria-hidden="true">🌽</div>
+            <h3 class="card-title">Elote Pizza</h3>
+            <p class="card-desc">Charred corn, cotija cheese, chili lime spice on a creamy base.</p>
+            <p class="card-price">$13.00</p>
+            <p class="card-tags"><span aria-label="Vegetarian">V</span></p>
+            <a
+              href="order.html"
+              class="button small doordash-link"
+              aria-label="Order Elote Pizza on DoorDash"
+              >Order</a
+            >
+          </article>
+          <article class="menu-item card" data-category="pizza">
+            <div class="card-icon" aria-hidden="true">🥗</div>
+            <h3 class="card-title">Veggie Verde Pizza</h3>
+            <p class="card-desc">Roasted peppers, mushrooms, tomatillo salsa, melted cheese.</p>
+            <p class="card-price">$12.00</p>
+            <p class="card-tags"><span aria-label="Vegetarian">V</span></p>
+            <a
+              href="order.html"
+              class="button small doordash-link"
+              aria-label="Order Veggie Verde Pizza on DoorDash"
+              >Order</a
+            >
+          </article>
+          <!-- Sides -->
+          <article class="menu-item card" data-category="side">
+            <div class="card-icon" aria-hidden="true">🍅</div>
+            <h3 class="card-title">Chips & Salsa</h3>
+            <p class="card-desc">Crisp corn chips with smoky salsa.</p>
+            <p class="card-price">$4.00</p>
+            <p class="card-tags"><span aria-label="Gluten‑free">GF</span></p>
+            <a
+              href="order.html"
+              class="button small doordash-link"
+              aria-label="Order Chips and Salsa on DoorDash"
+              >Order</a
+            >
+          </article>
+          <article class="menu-item card" data-category="side">
+            <div class="card-icon" aria-hidden="true">🌽</div>
+            <h3 class="card-title">Street Corn Salad</h3>
+            <p class="card-desc">Fresh corn, lime crema, cotija cheese.</p>
+            <p class="card-price">$5.00</p>
+            <p class="card-tags"><span aria-label="Vegetarian">V</span> <span aria-label="Gluten‑free">GF</span></p>
+            <a
+              href="order.html"
+              class="button small doordash-link"
+              aria-label="Order Street Corn Salad on DoorDash"
+              >Order</a
+            >
+          </article>
+          <!-- Drinks -->
+          <article class="menu-item card" data-category="drink">
+            <div class="card-icon" aria-hidden="true">🥛</div>
+            <h3 class="card-title">Horchata</h3>
+            <p class="card-desc">House‑made cinnamon rice drink.</p>
+            <p class="card-price">$3.00</p>
+            <p class="card-tags"><span aria-label="Vegetarian">V</span> <span aria-label="Gluten‑free">GF</span></p>
+            <a
+              href="order.html"
+              class="button small doordash-link"
+              aria-label="Order Horchata on DoorDash"
+              >Order</a
+            >
+          </article>
+          <article class="menu-item card" data-category="drink">
+            <div class="card-icon" aria-hidden="true">🍹</div>
+            <h3 class="card-title">Agua Fresca</h3>
+            <p class="card-desc">Rotating seasonal fruit drink.</p>
+            <p class="card-price">$3.00</p>
+            <p class="card-tags"><span aria-label="Vegetarian">V</span> <span aria-label="Gluten‑free">GF</span></p>
+            <a
+              href="order.html"
+              class="button small doordash-link"
+              aria-label="Order Agua Fresca on DoorDash"
+              >Order</a
+            >
+          </article>
+          <!-- Desserts -->
+          <article class="menu-item card" data-category="dessert">
+            <div class="card-icon" aria-hidden="true">🍩</div>
+            <h3 class="card-title">Churro Bites</h3>
+            <p class="card-desc">Cinnamon sugar churro bites with chocolate dipping sauce.</p>
+            <p class="card-price">$5.00</p>
+            <p class="card-tags"><span aria-label="Vegetarian">V</span></p>
+            <a
+              href="order.html"
+              class="button small doordash-link"
+              aria-label="Order Churro Bites on DoorDash"
+              >Order</a
+            >
+          </article>
+          <article class="menu-item card" data-category="dessert">
+            <div class="card-icon" aria-hidden="true">🍮</div>
+            <h3 class="card-title">Flan</h3>
+            <p class="card-desc">Creamy caramel flan with citrus zest.</p>
+            <p class="card-price">$5.00</p>
+            <p class="card-tags"><span aria-label="Gluten‑free">GF</span></p>
+            <a
+              href="order.html"
+              class="button small doordash-link"
+              aria-label="Order Flan on DoorDash"
+              >Order</a
+            >
+          </article>
+        </div>
+        <!-- Bottom CTA -->
+        <div class="menu-cta" style="text-align: center; margin-top: 2rem;">
+          <a href="order.html" class="button doordash-link">Order on DoorDash</a>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-container">
+        <div class="footer-section contact-info">
+          <h3>Contact</h3>
+          <p>
+            <strong>Address:</strong>
+            <span data-config="address">123 Sample St, Salem, OR 97301</span>
+          </p>
+          <p>
+            <strong>Phone:</strong> <a href="tel:5035551212" data-config="phone">
+              (503) 555‑1212
+            </a>
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:orders@fiestapizzasalem.com" data-config="email">
+              orders@fiestapizzasalem.com
+            </a>
+          </p>
+        </div>
+        <div class="footer-section hours">
+          <h3>Hours</h3>
+          <p data-config="hours">Sun–Thu 11 a–9 p<br />Fri–Sat 11 a–10 p</p>
+        </div>
+        <div class="footer-section social">
+          <h3>Follow</h3>
+          <p>
+            <a href="#" data-config="social" aria-label="Fiesta Pizza on social media">
+              @fiestapizzasalem
+            </a>
+          </p>
+        </div>
+        <div class="footer-section newsletter">
+          <h3>Newsletter</h3>
+          <form id="newsletter-form" novalidate>
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <input
+              type="email"
+              id="newsletter-email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+            <button type="submit" class="button small">Subscribe</button>
+            <p id="newsletter-message" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+      <p class="privacy-note">We respect your privacy and only use your information to send the occasional pizza update.</p>
+    </footer>
+    <!-- Floating order button -->
+    <a href="order.html" class="floating-order doordash-link" aria-label="Order on DoorDash">
+      Order
+    </a>
+    <!-- Scripts -->
+    <script src="js/config.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
